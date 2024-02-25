@@ -1,0 +1,19 @@
+#bannerimage {
+  width: 100%;
+  background-image: url("images/fr.jpg");
+  height: 405px;
+  background-color: purple;
+  background-position: center;
+ background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}body {
+}
+.container-fluid {
+}
+body {
+    background-image: -webkit-linear-gradient(270deg,rgba(245,196,232,1.00) 0%,rgba(250,242,248,1.00) 19.69%,rgba(251,251,251,1.00) 76.68%,rgba(0,163,255,1.00) 100%);
+    background-image: -moz-linear-gradient(270deg,rgba(245,196,232,1.00) 0%,rgba(250,242,248,1.00) 19.69%,rgba(251,251,251,1.00) 76.68%,rgba(0,163,255,1.00) 100%);
+    background-image: -o-linear-gradient(270deg,rgba(245,196,232,1.00) 0%,rgba(250,242,248,1.00) 19.69%,rgba(251,251,251,1.00) 76.68%,rgba(0,163,255,1.00) 100%);
+    background-image: linear-gradient(180deg,rgba(245,196,232,1.00) 0%,rgba(250,242,248,1.00) 19.69%,rgba(251,251,251,1.00) 76.68%,rgba(0,163,255,1.00) 100%);
+}
