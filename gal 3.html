@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+<head>
+	    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Untitled Document</title>
+    <!-- Bootstrap -->
+	<link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet" type="text/css">
+ <title>Gallery Page</title>
+
+
+
+<style type="text/css">
+*{
+ margin: 0px;
+ padding: 0px;
+}
+body{
+ font-family: arial;
+
+}
+.main{
+ background-color:#E6E6FA;
+ 
+}
+.head{
+background-color: #f5eef8;
+border-radius:20px;
+}
+
+.card{
+     width: 28%;
+     display: inline-block;
+	 box-shadow: 2px 2px 20px black;
+     border-radius: 10px; 
+     margin: 2%;
+    }
+
+.image img{
+  width: 100%;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  height:500px
+ }
+
+.title{
+  text-align: center;
+  padding: 10px;
+  background-color: #FFFFFF;
+ }
+
+h1{
+  font-size: 20px;
+ }
+ 
+p{
+ padding-top:30px;
+ padding-bottom:30px;
+ font-size:48px;
+text-align: center;
+ }
+
+.des{
+  text-align: center;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  background-color:#FFFFFF;
+}
+.des button{
+  margin-top: 20px;
+  margin-bottom: 10px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding:10px;
+  background-color:#17202a;
+  color:#FFFFFF;
+}
+button:hover{
+  background-color: black;
+  color: white;
+  transition: .5s;
+  cursor: pointer;
+}
+
+
+
+</style>
+	</head>
+<body>
+	<div class="container-fluid">
+  	  <div class="container">
+  	<nav class="navbar navbar-expand-lg navbar-light bg-light nav-fill">
+        <a class="navbar-brand" href="index.html"><img src="images/57.png" alt="logo" width="160" height="70" class="d-block mx-auto rounded"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Login</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="adlogin.php">Admin</a>
+                <a class="dropdown-item" href="log.php">Customer</a>
+               
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbaDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categories</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="gal 1.html">Ladies</a>
+                <a class="dropdown-item" href="gal 2.html">weddings</a>
+                <a class="dropdown-item" href="gal 3.html">Mens</a>
+                <a class="dropdown-item" href="gal 4.html">kids</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="serv.php">Other Adds</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="comment.php">Comments</a>
+            </li>
+            <li>
+              <a class="nav-link" href="galon.html">
+                <button>Give Your Sandal Details</button>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+		
+
+<div class="head">
+	<p style="font-family: 'Arial Black', sans-serif; color: #9913A5; font-size:25px" ><img src="Images/57.png" alt="Logo" style="height: 150px; vertical-align: middle; border-radius:80px;"> &nbsp; &nbsp;  Choose your shoes</p>
+</div>
+
+<div class="main">
+
+ 
+
+<div class="card">
+
+<div class="image">
+   <img src="Images/m1.jfif" alt="men 1">
+</div>
+<div class="title">
+ <h1>
+LKR.1650/=</h1>
+</div>
+<div class="des">
+            <button onclick="showOrderForm('1650', 'men 1')">Add to Cart</button>
+        </div>
+</div>
+
+
+
+<div class="card">
+
+<div class="image">
+   <img src="Images/m2.jfif" alt="men 2">
+</div>
+<div class="title">
+ <h1>
+LKR.1800/=</h1>
+</div>
+<div class="des">
+            <button onclick="showOrderForm('1800', 'men 2')">Add to Cart</button>
+        </div>
+</div>
+
+
+
+<div class="card">
+
+<div class="image">
+   <img src="Images/m3.jfif" alt="men 3">
+</div>
+<div class="title">
+ <h1>
+LKR.1700/=</h1>
+</div>
+<div class="des">
+            <button onclick="showOrderForm('1700', 'men 3')">Add to Cart</button>
+        </div>
+</div>
+
+
+<div class="card">
+
+<div class="image">
+  <img src="Images/m4.jfif" alt="men 4">
+</div>
+<div class="title">
+ <h1>
+LKR.1650/=</h1>
+</div>
+<div class="des">
+            <button onclick="showOrderForm('1650', 'men 4')">Add to Cart</button>
+        </div>
+</div>
+<!--cards -->
+
+
+<div class="card">
+
+<div class="image">
+<img src="Images/m5.jfif" alt="men 5">
+</div>
+<div class="title">
+ <h1>
+LKR.1850/=</h1>
+</div>
+<div class="des">
+            <button onclick="showOrderForm('1850', 'men 5')">Add to Cart</button>
+        </div>
+</div>
+
+
+<div class="card">
+
+<div class="image">
+  <img src="Images/m6.jfif" alt="men 6">
+</div>
+<div class="title">
+ <h1>
+LKR.1750/=</h1>
+</div>
+<div class="des">
+            <button onclick="showOrderForm('1750', 'men 6')">Add to Cart</button>
+        </div>
+</div>
+
+
+<div class="card">
+
+<div class="image">
+  <img src="Images/m7.jfif" alt="men 7">
+</div>
+<div class="title">
+ <h1>
+LKR.1590/=</h1>
+</div>
+<div class="des">
+            <button onclick="showOrderForm('1590', 'men 7')">Add to Cart</button>
+        </div>
+</div>
+<!--cards -->
+
+
+<div class="card">
+
+<div class="image">
+  <img src="Images/m8.jfif" alt="men 8">
+</div>
+<div class="title">
+ <h1>
+LKR.2100/=</h1>
+</div>
+<div class="des">
+            <button onclick="showOrderForm('2100', 'men 8')">Add to Cart</button>
+        </div>
+</div>
+
+
+
+
+</div>
+</div></div>
+	
+	<script src="js/jquery-3.4.1.min.js"></script>
+
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/popper.min.js"></script> 
+  <script src="js/bootstrap-4.4.1.js"></script>
+<script type="text/javascript">
+function showOrderForm(price, itemName) {
+    var orderForm = `
+    <div id="orderForm" style=" background-image: -webkit-linear-gradient(270deg,rgba(227,118,219,1.00) 0%,rgba(221,223,225,1.00) 35.75%,rgba(191,214,224,1.00) 94.82%);
+    background-image: -moz-linear-gradient(270deg,rgba(227,118,219,1.00) 0%,rgba(221,223,225,1.00) 35.75%,rgba(191,214,224,1.00) 94.82%);
+    background-image: -o-linear-gradient(270deg,rgba(227,118,219,1.00) 0%,rgba(221,223,225,1.00) 35.75%,rgba(191,214,224,1.00) 94.82%);
+    background-image: linear-gradient(180deg,rgba(227,118,219,1.00) 0%,rgba(221,223,225,1.00) 35.75%,rgba(191,214,224,1.00) 94.82%);; padding: 20px; border-radius: 10px;">
+        <h2>Order Details</h2>
+        <form id="orderForm" onsubmit="submitOrder(event, '${price}', '${itemName}')">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="phone">Phone Number:</label><br>
+            <input type="text" id="phone" name="phone" required><br><br>
+            <label for="address">Address:</label><br>
+            <input type="text" id="address" name="address" required><br><br>
+            <label for="shoeSize">Shoe Size:</label><br>
+            <select id="shoeSize" size="1" name="shoeSize" required>
+  <option>5</option>
+  <option>6</option>
+  <option>7</option>
+  <option>8</option>
+  <option>9</option>
+  <option>10</option>
+  <option>11</option>
+</select><br><br>
+             <input type="submit" value="Place Order" style="width: 20%; background-image: -webkit-linear-gradient(270deg,rgba(165,134,231,1.00) 0%,rgba(255,125,238,0.49) 50.78%,rgba(255,0,221,0.49) 100%); background-image: -moz-linear-gradient(270deg,rgba(165,134,231,1.00) 0%,rgba(255,125,238,0.49) 50.78%,rgba(255,0,221,0.49) 100%); background-image: -o-linear-gradient(270deg,rgba(165,134,231,1.00) 0%,rgba(255,125,238,0.49) 50.78%,rgba(255,0,221,0.49) 100%); background-image: linear-gradient(180deg,rgba(165,134,231,1.00) 0%,rgba(255,125,238,0.49) 50.78%,rgba(255,0,221,0.49) 100%); border-collapse: collapse; -webkit-box-shadow: 0px 0px #DFD8D8; box-shadow: 0px 0px #DFD8D8; border-radius: 10px; color: #3B003B;">
+        </form>
+    </div>`;
+    
+    // Append the form to the body
+    document.body.innerHTML += orderForm;
+}
+
+function submitOrder(event, price, itemName) {
+    event.preventDefault(); // Prevent default form submission
+    
+    // Get form values
+    var name = document.getElementById("name").value;
+    var phone = document.getElementById("phone").value;
+    var address = document.getElementById("address").value;
+    var shoeSize = document.getElementById("shoeSize").value;
+
+    // AJAX request to send form data to PHP script
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", "process_order.php", true);
+    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+            // Handle response if needed
+            alert(xhr.responseText); // Example: Show success message
+            document.getElementById("orderForm").remove(); // Remove order form after submission
+        }
+    };
+    xhr.send("name=" + name + "&phone=" + phone + "&address=" + address + "&shoeSize=" + shoeSize + "&price=" + price + "&itemName=" + itemName);
+}
+</script>
+</body>
+</html>

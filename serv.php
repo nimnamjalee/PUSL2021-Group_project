@@ -1,17 +1,49 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Untitled Document</title>
-  <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
-  <link href="styles.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Details</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <style>
+         {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+         td {
+            text-align: center;
+        }
+
+     td,  th {
+            border: 1px solid #E3A6DD;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #EBB7F9;
+        }
+
+         tr:hover {
+            background-color: #ddd;
+        }
+
+         th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: center;
+            background-color: #B346C7;
+            color: white;
+        }
+    </style>
 </head>
 <body>
-  <div class="container-fluid">
+<div class="container-fluid">
     <div class="container">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light nav-fill">
+             <nav class="navbar navbar-expand-lg navbar-light bg-light nav-fill">
         <a class="navbar-brand" href="index.html"><img src="images/57.png" alt="logo" width="160" height="70" class="d-block mx-auto rounded"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -58,57 +90,42 @@
           </ul>
         </div>
       </nav>
-      <div id="bannerimage">
-        <div class="banner-text">
-          <h1 class="col-lg-9">Choose the best Shoes <br> for your feet.</h1>
-        </div>
-      </div>
-		<hr><br><br>
-	  <div class="row">
-    <div class="col-lg-4">
-      <div class="card col-md-4 col-lg-12"> <img class="card-img-top" src="images/w5.jfif" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Ladies&nbsp;</h5>
-             
-              <a class="btn btn-primary" href="gal 1.html">View&nbsp;</a> </div>
-          </div>
-    </div>
-        <div class="col-lg-4">
-          <div class="card col-md-4 col-lg-12"> <img class="card-img-top" src="images/w2.jfif" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title"> Wedding</h5>
-             
+    <h1 >Other Companies</h1>
+    
+    <?php
+    
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $dbname = "shoedb";
 
-              <a  class="btn btn-primary" href="gal 2.html">View&nbsp;</a> </div>
-          </div>
-    </div>
-        <div class="col-lg-4">
-          <div class="card col-md-4 col-lg-12"> <img class="card-img-top" src="images/kg9.jfif" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Kids&nbsp;</h5>
-             
-              <a class="btn btn-primary" href="gal 4.html">View&nbsp;</a> </div>
-          </div>
-			<br><br>
-    </div>
-        <div class="col-lg-4">
-          <div class="card col-md-4 col-lg-12"> <img class="card-img-top" src="images/m1.jfif" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Mens&nbsp;</h5>
-              <a class="btn btn-primary" href="gal 3.html">View&nbsp;</a></div>
-          </div>
-			
-        </div>
-      </div>
-    </div>
-  </div>
+    
+    $conn = new mysqli($servername, $username, $password, $dbname);
 
-  <!-- body code goes here -->
+    
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
 
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
-  <script src="js/jquery-3.4.1.min.js"></script>
-  <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src="js/popper.min.js"></script> 
-  <script src="js/bootstrap-4.4.1.js"></script>
+    // Display existing service providers in a table
+    $sql = "SELECT company_name, services, service_page_link, about_company, created_at FROM service_providers";
+    $result = $conn->query($sql);
+
+    if ($result->num_rows > 0) {
+        
+        echo "<table >";
+        echo "<tr><th>Company Name</th><th>Services</th><th>Service Page Link</th><th>About Company</th><th>Date</th></tr>";
+        while($row = $result->fetch_assoc()) {
+            echo "<tr><td>" . $row["company_name"]. "</td><td>" . $row["services"]. "</td><td><a href='" . $row["service_page_link"] . "' target='_blank'>" . $row["service_page_link"] . "</a></td><td>" . $row["about_company"]. "</td><td>" . $row["created_at"]. "</td></tr>";
+        }
+        echo "</table>";
+    } else {
+        echo "<p>No service providers yet.</p>";
+    }
+
+    // Close database connection
+    $conn->close();
+    ?>
+ </div> </div>
 </body>
 </html>

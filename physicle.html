@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	 <style>
+        input[type=text],
+        input[type=tel] {
+            width: 100%;
+            padding: 10px 10px;
+            margin: 12px 0;
+            box-sizing: border-box;
+        }
+
+        form {
+            background-color: #E9CEE5;
+            padding: 20px;
+            border-radius: 6px;
+            padding: 20px;
+        }
+
+        input[type=submit] {
+            background-color: #F7AFE5;
+            color: black;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            float: left;
+        }
+
+        .custom {
+            text-align: center;
+            background-color: #F7AFE5;
+            color: black;
+            padding: 50px;
+        }
+    </style>
+    <meta charset="utf-8">
+    <title>Customize Your Own Design</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Untitled Document</title>
+  <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light nav-fill">
+        <a class="navbar-brand" href="index.html"><img src="images/57.png" alt="logo" width="160" height="70" class="d-block mx-auto rounded"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Login</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="adlogin.php">Admin</a>
+                <a class="dropdown-item" href="log.php">Customer</a>
+               
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbaDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categories</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="gal 1.html">Ladies</a>
+                <a class="dropdown-item" href="gal 2.html">weddings</a>
+                <a class="dropdown-item" href="gal 3.html">Mens</a>
+                <a class="dropdown-item" href="gal 4.html">kids</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="serv.php">Other Adds</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="comment.php">Comments</a>
+            </li>
+            <li>
+              <a class="nav-link" href="galon.html">
+                <button>Give Your Sandal Details</button>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+<hr><br>
+		   <div class="custom">
+        <h1>Customize Your Own Design</h1>
+        <p>We will produce your customized shoes according to your wishes. For that, fill the form below.</p>
+    </div>
+    <div class="dive" id="dive">
+        <form id="form" action="phy.php" method="post">
+            <label for="name">Name</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="shoetype">Shoetype</label><br><br>
+            <select id="si2" name="category">
+                <option value="ladies">Ladies</option>
+                <option value="gents">Gents</option>
+                <option value="kids">Kids</option>
+            </select><br><br>
+            <label for="address">Address</label><br>
+            <input type="text" id="address" name="address"><br>
+            <label for="pn">Contact No</label><br>
+            <input type="tel" id="pn" name="pn"><br>
+            <label for="email">Email</label><br>
+            <input type="text" id="email" name="email"><br><br><br>
+            <hr><br><br>
+            <label for="size">Width(cm)</label><br>
+            <input type="text" id="size" name="size"><br>
+            <label for="s1">Height(cm)</label><br>
+            <input type="text" id="s1" name="s1"><br><br><br>
+            <hr>
+            <br>
+            <label for="material">Material</label> &nbsp <a href="galpu.html">select your color</a><br><br>
+            <select id="materialColor" name="materialColor">
+                <option value="Gray Black">Gray Black</option>
+                <option value="Dark purple">Dark purple</option>
+                <option value="chocolate brown">chocolate brown</option>
+                <option value="salmon pink">salmon pink</option>
+                <option value="peach color">peach color</option>
+                <option value="sky blue">sky blue</option>
+                <option value="dark green">dark green</option>
+                <option value="bage">Bage</option>
+                <option value="Dark red">Dark red</option>
+            </select><br><br>
+
+            <label for="costume">costume</label>&nbsp <a href="galcu.html">select your costume</a><br><br>
+            <select id="costume" name="costume">
+                <option value="none">none</option>
+                <option value="spark flower">spark flower</option>
+                <option value="long flower">long flower</option>
+                <option value="black flower">black flower</option>
+                <option value="brown cloth flower">brown cloth flower</option>
+                <option value="Pink flower bucle">Pink flower bucle</option>
+                <option value="blue ribbon flower">blue ribbon flower</option>
+                <option value="brown bow">brown bow</option>
+                <option value="pink large">pink large</option>
+                <option value="Red flower">Red flower</option>
+            </select><br><br>
+            <hr>
+            <br>
+            <label for="heel">heel</label><br>
+            <select id="heel" name="heel">
+                <option value="none">none</option>
+                <option value="1/2 inch">1/2 inch</option>
+                <option value="1 inch">1 inch</option>
+                <option value="1.5 inch">1.5 inch</option>
+                <option value="2 inch">2 inch</option>
+                <option value="2.5 inch">2.5 inch</option>
+                <option value="3 inch">3 inch</option>
+                <option value="3.5 inch">3.5 inch</option>
+                <option value="4 inch">4 inch</option>
+            </select><br><br>
+            <br><br>
+            <label for="hyperlink">HyperLink (path of your shoe design)</label><br>
+            <input type="url" id="hyperlink" name="hyperlink" style="width: 80%; padding: 10px 10px; margin: 12px 0; box-sizing: border-box;"><br>
+            <p style="color: purple; font-size:large;">If you have a photo, upload it to Google Drive and give us access and enter the link here. Or write about the design you want in the box below.</p>
+            <br><label for="detail">More Details</label><br>
+            <textarea rows="6" cols="50" id="detail" name="detail" placeholder="Enter text here..."></textarea><br><br>
+            <label for="requiredDate">Required Date:</label>
+            <input type="date" id="requiredDate" name="requiredDate">
+            <br><br><br>
+<input type="hidden" id="orderPrice" name="orderPrice">
+            <input type="submit" value="Submit"><br>
+        </form>
+    </div>
+
+    <script>
+        function clearDefaultText() {
+            var textarea = document.getElementById("detail");
+            if (textarea.value === "Enter text here...") {
+                textarea.value = "";
+                textarea.style.color = "#000";
+            }
+        }
+
+        document.getElementById("form").addEventListener("submit", function (event) {
+            event.preventDefault();
+            var validationErrors = validateForm();
+            if (validationErrors.length === 0) {
+                var confirmed = calculatePrice();
+                if (confirmed) {
+                    this.submit();
+                }
+            } else {
+                alert(validationErrors.join("\n"));
+                return false;
+            }
+        });
+
+        function validateForm() {
+            var errors = [];
+            var name = document.getElementById("name").value.trim();
+            var address = document.getElementById("address").value
+            var address = document.getElementById("address").value.trim();
+            var pn = document.getElementById("pn").value.trim();
+            var email = document.getElementById("email").value.trim();
+            var size = document.getElementById("size").value.trim();
+            var s1 = document.getElementById("s1").value.trim();
+            var hyperlink = document.getElementById("hyperlink").value.trim();
+            var detail = document.getElementById("detail").value.trim();
+            var requiredDate = document.getElementById("requiredDate").value;
+
+            // Validation for required fields
+            if (name === "") {
+                errors.push("Please enter your name.");
+            }
+            if (address === "") {
+                errors.push("Please enter your address.");
+            }
+            if (pn === "") {
+                errors.push("Please enter your contact number.");
+            }
+            if (email === "") {
+                errors.push("Please enter your email address.");
+            }
+            if (size === "") {
+                errors.push("Please enter the width.");
+            }
+            if (s1 === "") {
+                errors.push("Please enter the height.");
+            }
+            if (hyperlink === "") {
+                errors.push("Please provide the shoe design hyperlink.");
+            }
+            if (detail === "" || detail === "Enter text here...") {
+                errors.push("Please provide more details.");
+            }
+            if (requiredDate === "") {
+                errors.push("Please enter the required date.");
+            }
+
+            // Validation for contact number
+            var phoneRegex = /^\d{10}$/;
+            if (!phoneRegex.test(pn)) {
+                errors.push("Please enter a valid 10-digit phone number starting with 0.");
+            }
+
+            // Validation for email format
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                errors.push("Please enter a valid email address.");
+            }
+
+            // Validation for width and height in centimeters
+            var numericRegex = /^\d+(\.\d+)?$/;
+            if (!numericRegex.test(size) || !numericRegex.test(s1)) {
+                errors.push("Width and Height must be numeric values .");
+            }
+
+            // Additional validation for width and height units (centimeters)
+            if (parseFloat(size) <= 0 || parseFloat(s1) <= 0) {
+                errors.push("Width and Height must be greater than 0.");
+            }
+
+            return errors; // Return array of validation errors
+        }
+
+        function calculatePrice() {
+            var width = parseFloat(document.getElementById("size").value);
+            var height = parseFloat(document.getElementById("s1").value);
+            var materialQuantity = (((width + 2) * (height + 2)) * 2);
+            var matColor = document.getElementById("materialColor").value;
+            var matColorPrice = 0;
+            var costume = document.getElementById("costume").value;
+            var costumePrice = 0;
+            var heel = document.getElementById("heel").value;
+            var heelPrice = 0;
+            var dateString = document.getElementById("requiredDate").value;
+            var dateParts = dateString.split("-"); // Assuming date format is YYYY-MM-DD
+            var requiredDate = new Date(dateParts[0], dateParts[1] - 1, dateParts[2]); // Month is 0-indexed, so subtract 1
+            var timestamp = requiredDate.getTime();
+
+            switch (matColor) {
+                case "Gray Black":
+                    matColorPrice = 1.5;
+                    break;
+                case "Dark purple":
+                    matColorPrice = 1.2;
+                    break;
+                case "chocolate brown":
+                    matColorPrice = 1.8;
+                    break;
+                case "salmon pink":
+                    matColorPrice = 2;
+                    break;
+                case "peach color":
+                    matColorPrice = 2.2;
+                    break;
+                case "sky blue":
+                    matColorPrice = 1.7;
+                    break;
+                case "dark green":
+                    matColorPrice = 1.9;
+                    break;
+                case "bage":
+                    matColorPrice = 1.6;
+                    break;
+                case "Dark red":
+                    matColorPrice = 2.3;
+                    break;
+                default:
+                    matColorPrice = 2;
+            }
+
+            switch (costume) {
+                case "none":
+                    costumePrice = 0;
+                    break;
+                case "spark flower":
+                    costumePrice = 130;
+                    break;
+                case "long flower":
+                    costumePrice = 150;
+                    break;
+                case "black flower":
+                    costumePrice = 80;
+                    break;
+                case "brown cloth flower":
+                    costumePrice = 110;
+                    break;
+                case "Pink flower bucle":
+                    costumePrice = 90;
+                    break;
+                case "blue ribbon flower":
+                    costumePrice = 100;
+                    break;
+                case "brown bow":
+                    costumePrice = 85;
+                    break;
+                case "pink large":
+                    costumePrice = 180;
+                    break;
+                case "Red flower":
+                    costumePrice = 90;
+                    break;
+                default:
+                    costumePrice = 0;
+            }
+
+            switch (heel) {
+                case "none":
+                    heelPrice = 0;
+                    break;
+                case "1/2 inch":
+                    heelPrice = 120;
+                    break;
+                case "1 inch":
+                    heelPrice = 150;
+                    break;
+                case "1.5 inch":
+                    heelPrice = 180;
+                    break;
+                case "2 inch":
+                    heelPrice = 200;
+                    break;
+                case "2.5 inch":
+                    heelPrice = 210;
+                    break;
+                case "3 inch":
+                    heelPrice = 240;
+                    break;
+                case "3.5 inch":
+                    heelPrice = 260;
+                    break;
+                case "4 inch":
+                    heelPrice = 280;
+                    break;
+                default:
+                    heelPrice = 0;
+            }
+
+            var price = (matColorPrice * materialQuantity) + 200 + 180 + 200 + costumePrice + heelPrice;
+ document.getElementById("orderPrice").value = price;
+            var matprice = (matColorPrice * materialQuantity);
+            var confirmationMessage = "\n Your material Quantity for insole(1cmx1cm):" + materialQuantity + "\n Your material price:Rs." + matprice + "\n Your costume price:Rs." + costumePrice +
+                "\n Your heel Price:Rs." + heelPrice + "\n Your required Date(YYYY-MM-DD) is :" + dateParts + "\n Your order price is: Rs." + price;
+            return confirm(confirmationMessage);
+        }
+    </script>
+		<br>
+</div>
+  </div>
+
+  <!-- body code goes here -->
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/popper.min.js"></script> 
+  <script src="js/bootstrap-4.4.1.js"></script>
+</body>
+</html>
