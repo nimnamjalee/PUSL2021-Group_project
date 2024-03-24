@@ -1,0 +1,181 @@
+<html>
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Raleway;
+  background-color: #202125;
+}
+
+.heading {
+    text-align: center;
+    font-size: 2.0em;
+    letter-spacing: 1px;
+    padding: 40px;
+    color: white;
+}
+
+.gallery-image {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery-image img {
+  height: 250px;
+  width: 350px;
+  transform: scale(1.0);
+  transition: transform 0.4s ease;
+}
+
+.img-box {
+  box-sizing: content-box;
+  margin: 10px;
+  height: 250px;
+  width: 350px;
+  overflow: hidden;
+  display: inline-block;
+  color: white;
+  position: relative;
+  background-color: white;
+}
+
+.caption {
+  position: absolute;
+  bottom: 5px;
+  left: 20px;
+  opacity: 0.0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.transparent-box {
+  height: 250px;
+  width: 350px;
+  background-color:rgba(0, 0, 0, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: background-color 0.3s ease;
+}
+
+.img-box:hover img { 
+  transform: scale(1.1);
+}
+
+.img-box:hover .transparent-box {
+  background-color:rgba(0, 0, 0, 0.5);
+}
+
+.img-box:hover .caption {
+  transform: translateY(-20px);
+  opacity: 1.0;
+}
+
+.img-box:hover {
+  cursor: pointer;
+}
+
+.caption > p:nth-child(2) {
+  font-size: 0.8em;
+}
+
+.opacity-low {
+  opacity: 0.5;
+}
+</style>
+<head>
+  <title>CSS Gallery</title>
+  <link href="https://fonts.googleapis.com/css?family=Raleway:600,900" rel="stylesheet">
+</head>
+<body>
+   <p class="heading">Select your Material</p>
+  <div class="gallery-image">
+    <div class="img-box">
+      <img src="images/c1.jpg" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>Name</p>
+          <p class="opacity-low">spark flower</p>
+        </div>
+      </div> 
+    </div>
+    <div class="img-box">
+      <img src="images/c2.jpg" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>Name</p>
+          <p class="opacity-low">long flower</p>
+        </div>
+      </div>
+    </div>
+    <div class="img-box">
+      <img src="images/c3.jpg" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>Name</p>
+          <p class="opacity-low">black flower</p>
+        </div>
+      </div>
+    </div>
+    <div class="img-box">
+      <img src="images/c4.jpg" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>Name</p>
+          <p class="opacity-low">brown cloth flower</p>
+        </div>
+      </div> 
+    </div>
+    <div class="img-box">
+      <img src="images/c5.jpg" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>Name</p>
+          <p class="opacity-low">Pink flower bucle</p>
+        </div>
+      </div> 
+    </div>
+    <div class="img-box">
+      <img src="images/c6.jpg" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>Name</p>
+          <p class="opacity-low">blue ribbon flower</p>
+        </div>
+      </div> 
+    </div>
+<div class="img-box">
+      <img src="images/c7.jpg" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>Name</p>
+          <p class="opacity-low">brown bow</p>
+        </div>
+      </div> 
+    </div>
+<div class="img-box">
+      <img src="images/c8.jpg" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>Name</p>
+          <p class="opacity-low">pink large</p>
+        </div>
+      </div> 
+    </div>
+<div class="img-box">
+      <img src="images/c9.jpg" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>Name</p>
+          <p class="opacity-low">Red flower</p>
+        </div>
+      </div> 
+    </div>
+  </div>
+</body>
+</html>
